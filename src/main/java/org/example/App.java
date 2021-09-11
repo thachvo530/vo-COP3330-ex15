@@ -13,11 +13,12 @@ public class App
 
         String correctpass = "abc$123";
 
-        System.out.print("What is the password? ");
-        Scanner password = new Scanner(System.in);
-        String password1 = password.next();
+        Scanner scan = new Scanner(System.in);
 
-        if (password1.equals(correctpass)) {
+        System.out.print("What is the password? ");
+        String password = scan.next();
+
+        if (password.equals(correctpass)) {
 
             System.out.print("Welcome!");
         }
@@ -25,7 +26,5 @@ public class App
         else {
             System.out.print("I don't know you.");
         }
-
-
     }
 }
